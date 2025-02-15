@@ -1,0 +1,12 @@
+motor~=3.7.0
+python-dotenv~=1.0.1
+fastapi~=0.115.8
+pydantic~=2.10.6
+pymongo~=4.11
+automium_web~=0.1.1
+
+fastapi
+uvicorn
+motor
+pydantic
+python-dotenv
