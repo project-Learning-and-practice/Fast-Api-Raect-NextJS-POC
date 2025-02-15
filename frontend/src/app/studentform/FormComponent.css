@@ -1,0 +1,88 @@
+.form-outer {
+  border: 1px solid gray;
+  width: 30%;
+  height: 80vh;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+input {
+  margin-left: 20px;
+  padding-left: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 400px;
+  border: 2px solid rgb(201, 201, 201);
+  border-radius: 7px;
+}
+
+input:hover {
+  border: 2px solid #90d5ff;
+}
+
+input:active {
+  border: 2px solid #90d5ff;
+}
+
+.save-btn {
+  border: none;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-left: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.update-btn {
+  border: none;
+  background-color: #ffc107;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.delete-btn {
+  border: none;
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.clear-btn {
+  border: none;
+  background-color: #6c757d;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
