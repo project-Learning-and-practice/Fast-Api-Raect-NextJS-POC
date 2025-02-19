@@ -1,10 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { useDispatch, useSelector } from "react-redux";
-import counterReducer from "./slices/bookSlice";
+// import counterReducer from "./slices/bookSlice";
+import studentSlice from "@/app/redux/slices/studentSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    student: studentSlice,
   },
 });
 

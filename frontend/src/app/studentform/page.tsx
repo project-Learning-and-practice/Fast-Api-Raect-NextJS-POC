@@ -2,14 +2,37 @@
 import React, { useState } from "react";
 import "./FormComponent.css";
 import StudentTable from "@/app/Table/Page";
+import { useAppDispatch } from "@/app/redux/store";
+import student from "../Models/studentModel";
+import { addStudent } from "../redux/slices/studentSlice";
 
 function FormComponent() {
   const [name, setName] = useState("");
   const [age, setAge] = useState(0);
   const [email, setEmail] = useState("");
+  const dispatch = useAppDispatch();
 
-  const submitHandler = (e: React.FormEvent) => {
+  const submitHandler = async (e: React.FormEvent) => {
     e.preventDefault();
+    const data = {
+      name: name,
+      age: age,
+      email: email,
+    };
+    const studentData = new student(name, age, email);
+    // const result = await fetch("http://localhost:8000/api/students/", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(data),
+    // });
+    // axios
+    //   .post("http://localhost:8000/api/students/", data)
+    //   .then((response) => console.log("Data created:", response.data))
+    //   .catch((error) => console.error("Error:", error));
+
+    dispatch(addStudent(studentData));
   };
 
   return (
